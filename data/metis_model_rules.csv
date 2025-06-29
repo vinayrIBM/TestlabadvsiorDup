@@ -1,0 +1,4 @@
+model,drawer_type,max_cards,domains,fanout_type,deprecated_cards,notes
+ME1,Dual,8,IO/CPU,Star,None,Supports RoCE & OSA
+NE2,Quad,12,Storage,Mesh,HP03,Legacy fanout in slot 3
+ZX4,Tri,10,IO/Storage,Star,LG09,Test model for 2025 hardware configs

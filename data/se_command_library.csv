@@ -1,0 +1,9 @@
+pattern,command_set,reason
+1B,lsdev -C|grep RoCE,To check RoCE card enumeration
+5A,pwrcheck -v,Verify power supply health
+HP,diag_psu.sh,Run detailed PSU diagnostics
+32C,diag_net -v,Investigate NETUCODE firmware stall
+B14,memcheck -d,Check DIMM and processor status
+110,modtray --reset,Reset tray initialization
+B15,pwrcheck --detail,Deep PSU analysis for drawer-level issues
+B17,flash_fw -force,Force firmware reflash after failed boot

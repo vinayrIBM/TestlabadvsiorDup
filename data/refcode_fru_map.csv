@@ -1,0 +1,10 @@
+refcode,fru_code,fru_name,drawer,location,recovered,se_commands,notes
+1B14,LG08,RoCE Adapter,Drawer 2,P1-C6,Yes,lsdev -C|grep RoCE,Confirmed recovery after reseat
+1B14,LG09,RoCE Adapter,Drawer 2,P1-C7,No,replace_adpt.sh RoCE,Unrecovered – suspected firmware mismatch
+5A11,HP07,Power Supply,Drawer 1,P1-B1,Yes,pwrcheck -v,Fluctuation detected prior to swap
+32C2033,NET1,Network Controller,Drawer 3,P1-B4,No,diag_net -v,NETUCODE trigger: firmware stall detected
+B1400A7,PC01,Processor Card,Drawer 1,P1-A2,No,memcheck -d,Intermittent DIMM ECC errors
+1100265,TRAY4,I/O Tray,Drawer 2,P1-F7,Yes,modtray --reset,Tray init passed after reseat
+B150B10D,PS03,Power Supply Unit,Drawer 4,P1-E3,No,pwrcheck --detail,Voltage dip near 12V line
+0001004F,TT01,Test Timeout Module,Drawer 0,P0-A1,No,test_diag -t,Generic timeout: diagnostics incomplete
+B170100E,FW02,System Firmware,Drawer 2,P1-D6,Yes,flash_fw -force,Manual reflash resolved bootloop

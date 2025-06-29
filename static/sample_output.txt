@@ -1,0 +1,4 @@
+[Diagnostic Summary]
+FRU: RoCE Adapter LG08 detected with intermittent link stability.
+Drawer 2, Slot P1-C6 — recovered after reseat.
+Recommend: Monitor for repeat failure within 72hr window.
